@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4,50px);
+    grid-auto-rows: 40px;
+    gap:8px;
+    justify-content: center;
+    align-content: center;
+}
+#input{
+    box-sizing: border-box;
+    background:lightgrey;
+    grid-column: 1/-1;
+    border: 1px solid grey;
+    font-size: large;
+    font-weight: bolder;
+    text-align: right;
+    padding-right:.5rem ;
+}
+.keys{
+border: 1px solid darkgray;
+}
+.key-clear{
+background: lightcoral;
+color: white;
+}
+.key-equal{
+background: darkcyan;
+color: white;
+
+}
+footer{
+    grid-column: 1/-1;
+    text-align: center;
+}
